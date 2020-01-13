@@ -35,7 +35,7 @@ export default class Main extends Component {
 
     this.setState({ loading: true });
 
-    const response = await api.get(`/${page}?sort=rating&order=-1&genre=all`);
+    const response = await api.get(`/${page}?sort=year&order=-1&genre=all`);
     const arr = response.data;
     console.log(page);
 
